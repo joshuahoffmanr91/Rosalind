@@ -2,8 +2,7 @@
 
 Rabbits () {
 
-unset A
-Array=( $1 $2 ) # $((${1:-2}/2)) $((${1:-2}/2))
+Array=( $1 $2 )
 
   while (( ${3:-1} >= ${A:=-1} )); do
   ((Value=${Array[A++]}+${Array[A]}))
